@@ -9,7 +9,7 @@
 - **User Authentication**: Secure and seamless sign-up and login functionality powered by Firebase Authentication.
 - **Real-Time Chat**: Engage in real-time conversations with friends and colleagues using Firestore.
 - **Profile Management**: Users can upload and manage profile pictures with Firebase Storage.
-- **Responsive Design**: The UI is fully responsive, designed with Tailwind CSS, ensuring a great experience on any device.
+- **Design**: The UI is designed with Tailwind CSS, ensuring a great experience .
 
 ## Tech Stack
 
