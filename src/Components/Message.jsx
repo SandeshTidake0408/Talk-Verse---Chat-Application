@@ -32,7 +32,11 @@ const Message = ({ message }) => {
                     <p>time</p>
                 </div>
 
-                <div className="flex flex-col items-end">
+                <div
+                    className={` flex flex-col  ${
+                        message.senderId === currentUser.uid ? "items-end" : ""
+                    }`}
+                >
                     <p
                         className={`p-2 px-4  text-sm rounded-b-lg w-fit ${
                             message.senderId === currentUser.uid
