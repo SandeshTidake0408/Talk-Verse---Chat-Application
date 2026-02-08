@@ -1,0 +1,19 @@
+:root {
+    /* Light theme colors */
+    --bg-primary: #ECFDF1;
+    --bg-secondary: #F9EAC2;
+    --bg-tertiary: #B4F8C8;
+    --bg-accent: #7CF3A0;
+    --bg-navbar: #FFD898;
+    
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
+    
+    --border-color: #e2e8f0;
+    --border-hover: #cbd5e0;
+    
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-lg: rgba(0, 0, 0, 0.15);
+}
+

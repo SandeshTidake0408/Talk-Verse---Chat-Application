@@ -1,21 +1,13 @@
-import "./App.css";
-import Resister from "./pages/resister";
-import Navbar from "./Components/navbar";
-import Login from "./pages/login";
+import "./styles/globals.css";
+import "./styles/themes/light.css";
+import "./styles/themes/dark.css";
+import Login from "./features/auth/components/Login";
+import Register from "./features/auth/components/Register";
 import Home from "./pages/Home";
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
-import { Children, useContext } from "react";
-import { AuthContext } from "./context/AuthContext";
-function App() {
-    const { currentUser } = useContext(AuthContext);
-    // console.log(currentUser);
+import ProtectedRoute from "./features/auth/components/ProtectedRoute";
 
-    const ProtectedRoute = ({ children }) => {
-        if (!currentUser) {
-            return <Navigate to="/login" />;
-        }
-        return children;
-    };
+function App() {
     return (
         <BrowserRouter>
             <Routes>
@@ -29,12 +21,12 @@ function App() {
                         }
                     />
                     <Route path="login" element={<Login />} />
-                    <Route path="register" element={<Resister />} />
+                    <Route path="register" element={<Register />} />
                     <Route
                         path="*"
                         element={
-                            <p className=" text-center pt-11 font-bold  siz">
-                                Hey Bro,its Not Correct URL
+                            <p className="text-center pt-11 font-bold text-gray-900 dark:text-gray-100">
+                                Hey Bro, its Not Correct URL
                             </p>
                         }
                     />
